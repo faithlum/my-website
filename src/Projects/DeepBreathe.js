@@ -64,7 +64,7 @@ function DeepBreathe() {
                         <h1>Deep Breathe</h1>
                         <div>
                             <Accordion expanded={state.isExpanded1} onChange={toggleExpansion1} sx={{ backgroundColor: "transparent", boxShadow: "none" }}>
-                                <AccordionSummary expandIcon={<ExpandMore/>} sx={{ marginTop: "20px" }}>
+                                <AccordionSummary expandIcon={<ExpandMore sx={{ color: '#F6A000' }}/> } sx={{ marginTop: "20px" }}>
                                     <Typography variant="h6" color="#F6A000" fontFamily="'Quicksand', sans-serif" fontSize="40px" fontWeight='500'>Reflection </Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{ paddingTop: "0px" }}>
