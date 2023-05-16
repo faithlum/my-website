@@ -106,7 +106,7 @@ function DeepBreathe() {
                 <div className="right">
                     <div className="right-sub">
                         <div>
-                            <img src="/memory_palace_lungs_upscaled.png" alt=""/>
+                            <img src="/lungs.png" alt=""/>
                         </div>
                     </div>
                 </div>

@@ -83,7 +83,7 @@
 }
 
 .right-sub {
-    background-color: rgb(166, 41, 220);
+    /* background-color: rgb(166, 41, 220); */
     height: 80%;
     width: 90%;
     display: flex;
