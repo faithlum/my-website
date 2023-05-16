@@ -13,17 +13,17 @@ export const NavItems = [
         url: '/',
         clssName: 'nav-links'
     },
-    {
-        title: 'projects',
-        url: '/projects',
-        // hasDropdown: true,
-        // dropdownItems: DropdownItems,
-        clssName: 'nav-links'
-    },
-    {
-        title: 'resume',
-        url: '/',
-        clssName: 'nav-links'
-    },
+    // {
+    //     title: 'projects',
+    //     url: '/projects',
+    //     // hasDropdown: true,
+    //     // dropdownItems: DropdownItems,
+    //     clssName: 'nav-links'
+    // },
+    // {
+    //     title: 'resume',
+    //     url: '/',
+    //     clssName: 'nav-links'
+    // },
 ];
 
