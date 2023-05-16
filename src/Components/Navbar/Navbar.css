@@ -1,0 +1,109 @@
+.navbar a {
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff;
+    /* text-decoration: underline; */
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    /* opacity: 0; */
+    /* animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i)) */
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #f79256
+}
+
+.navbar2 a {
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    font-size: 18px;
+    color: #000000;
+    /* text-decoration: underline; */
+    font-weight: 700;
+    margin-left: 35px;
+    transition: .3s;
+    /* opacity: 0; */
+    /* animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i)) */
+}
+
+.navbar2 a:hover,
+.navbar2 a.active {
+    color: #0ef
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 90vw;
+    justify-content: end;
+    margin-right: 2rem;
+    padding-left: 0;
+}
+
+.nav-links {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover{
+    /* background-color: #494949; */
+    color: #cccccc;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logoNav {
+    padding-top: 2vh;
+    width: 4vh;
+    height: 4vh;
+    opacity: 0;
+}
+
+.navbarWithLogo .logoNav{
+    opacity: 1;
+    transform: translateX(4vh);
+    transition:
+        opacity 0.5s 0.25s,
+        transform 1s;
+}
+
+.navbarWithLogo .navText{
+    transition: 1s;
+    transform: translateX(3vh);
+}
+
+.navbarWithoutLogo .logoNav {
+    opacity: 0;
+    transition:
+        opacity 0.5s 0.25s,
+        transform 0.5s 0.5s;
+}
+
+.navbarWithoutLogo .navText{
+    transition: 1s;
+    transform: translateX(0vh);
+}
+
+.dropdown {
+    position: absolute;
+    top: 80%;/* Position the dropdown below the parent item */
+    left: 35;
+    /* background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px; */
+  }
+  
