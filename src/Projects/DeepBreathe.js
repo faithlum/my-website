@@ -12,7 +12,7 @@ function DeepBreathe() {
         probsList: [0.1,0.5,0.3,0.8,0.5,0.6,0.7,0.2,0.3],
         classThresh: 0.5,
         videoURL: "https://www.youtube.com/watch?v=O9XtK6R1QAk",
-        isExpanded1: false,
+        isExpanded1: true,
         isExpanded2: false,
         isExpanded3: true,
         isExpanded4: true,
@@ -95,8 +95,8 @@ function DeepBreathe() {
                                 </AccordionSummary>
                                 <AccordionDetails sx={{ paddingTop: "0px" }}>
                                     <Typography variant="body1" color="white" fontFamily="'Quicksand', sans-serif" fontWeight='100' >
-                                        <p>I think I have a more nuanced appreciation for  the work that goes into ideating, designing, and implementing a project.</p>
-                                        <p>The tension between designing my ideal version release on paper and realizing the time and effort it takes to actually write code taught me how to listen to different perspectives, prioritize what is most important, and deliver a product users actually need.</p>
+                                        <p>I have a more nuanced appreciation for what it takes to ideate, design, implement, and test a project.</p>
+                                        <p>The tension between imagining my ideal version release on paper and realizing the time and effort it takes to actually write code taught me how to listen to different perspectives, prioritize what is most important, and deliver a product users actually need.</p>
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -111,53 +111,110 @@ function DeepBreathe() {
                     </div>
                 </div>
             </div>
-
             <div className="parent2">
-            <Grid container spacing={2} justify="center" style={{borderWidth: '10vh', borderStyle: 'solid', borderColor: 'transparent' }}>
-                <Grid container spacing={2} justify="center">
-                    {/* Column 1 */}
-                    <Grid item container direction="column" xs={12} sm={4} spacing={2}>
-                        <Grid item>
-                            <div style={{ height: "40vh", display: "flex", flexDirection: "column",justifyContent: "center", alignItems: "center"}}>
-                               <h1 style={{ color: "white", fontFamily: "'Quicksand', sans-serif", fontWeight: "bold" }}>Problem Definition</h1>
-                               <h3 style={{ color: "white", fontFamily: "'Quicksand', sans-serif" }}>What is the app's purpose?</h3>
-                               <h3 style={{ color: "white", fontFamily: "'Quicksand', sans-serif"}}>Who are our users?</h3>
-                            </div>
+                <Grid container spacing={2} justify="center" style={{borderWidth: '10vh', borderStyle: 'solid', borderColor: 'transparent' }}>
+                    <Grid container spacing={2} justify="center">
+                        {/* Column 1 */}
+                        <Grid item container direction="column" xs={12} sm={4} spacing={2}>
+                            <Grid item>
+                                <div style={{ height: "40vh", display: "flex", flexDirection: "column",justifyContent: "center", alignItems: "center"}}>
+                                <h1 style={{ color: "white", fontFamily: "'Quicksand', sans-serif", fontWeight: "bold" }}>Problem Definition</h1>
+                                <br/>
+                                <h3 style={{ color: "white", fontFamily: "'Quicksand', sans-serif" }}>What is the app's purpose?</h3>
+                                <h3 style={{ color: "white", fontFamily: "'Quicksand', sans-serif"}}>Who are our users?</h3>
+                                </div>
+                            </Grid>
+                            <Grid item>
+                                <div style={{ height: "40vh", display: "flex", flexDirection: "column",justifyContent: "center", alignItems: "center"}}>
+                                <h1 style={{ color: "white", fontFamily: "'Quicksand', sans-serif", fontWeight: "bold" }}>Brainstorming</h1>
+                                <br/>
+                                <h3 style={{ color: "white", fontFamily: "'Quicksand', sans-serif" }}>What features would help support our research?</h3>
+                                <h3 style={{ color: "white", fontFamily: "'Quicksand', sans-serif" }}>Any cool ideas you've wanted to try?</h3>
+                                </div>
+                            </Grid>
                         </Grid>
-                        <Grid item>
-                            <Paper style={{ height: "40vh", background: "green", display: "flex", justifyContent: "center", alignItems: "center" }}>TEST2</Paper>
-                        </Grid>
-                    </Grid>
-                    <Grid item container direction="column" xs={12} sm={8} spacing={2}>
-                        <Grid item style={{ marginLeft: "auto" }}>
-                            <div style={{ height: "40vh", width: "60vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", fontFamily: 'Quicksand'}}>                                
-                                <ol style={{ listStyleType: "none", padding: 0 }}>
-                                    <li style={{ color: "white", fontFamily: "'Quicksand', sans-serif", fontSize: "23px"}}>
-                                        <p>Internal tool for clinicans to test machine learning models with different parameters and visualize results</p>
-                                        <br />
-                                        Goals: 
-                                        <ul style={{ listStyleType: "disc", marginLeft: "2em" }}>
-                                            <li>
-                                                Improve user understanding of how the model performs
-                                            </li>
-                                            <li>
-                                                Run samples with a standard workflow
-                                            </li>
-                                            <li>
-                                                Present prediction data intuitively
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ol>
-                            </div>
-                        </Grid>
-                        <Grid item>
-                            <Paper style={{ height: "40vh", background: "green", display: "flex", justifyContent: "center", alignItems: "center" }}>Content2</Paper>
+                        <Grid item container direction="column" xs={12} sm={8} spacing={2}>
+                            <Grid item>
+                                <div style={{ height: "40vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", fontFamily: 'Quicksand'}}>                                
+                                    <ol style={{ listStyleType: "none", padding: 0 }}>
+                                        <li style={{ color: "white", fontFamily: "'Quicksand', sans-serif", fontSize: "23px"}}>
+                                            <p>Internal tool for clinicans to test machine learning models with different parameters and visualize results</p>
+                                            <br />
+                                            Goals: 
+                                            <ul style={{ listStyleType: "disc", marginLeft: "2em" }}>
+                                                <li>
+                                                    Improve user understanding of how the model performs
+                                                </li>
+                                                <li>
+                                                    Create workflow to automatically run samples without ML engineers
+                                                </li>
+                                                <li>
+                                                    Present prediction data intuitively
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </Grid>
+                            <Grid item>
+                                <div style={{ height: "40vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                    <ul style={{ listStyleType: "disc", marginLeft: "2em", color: "white", fontFamily: "'Quicksand', sans-serif", fontSize: "23px"}}>
+                                        <li>
+                                            Surveyed clinical members about what features they envisioned
+                                        </li>
+                                        <li>
+                                            Prioritized features to determine project scope, presenting to team for feedback
+                                        </li>
+                                        <li>
+                                            Shadowed critical care physicians in hospital
+                                            <ul style={{ marginLeft: "2em"}}>
+                                                <li>
+                                                    Experienced their workflow of collecting lung ultrasound samples and testing for clinical validation
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
-            </Grid>
             </div>
+            <div className="parent2">
+                <Grid container spacing={2} justify="center" style={{borderWidth: '10vh', borderStyle: 'solid', borderColor: 'transparent' }}>
+                    <Grid container spacing={2} justify="center">
+                        {/* Column 1 */}
+                        <Grid item container direction="column" xs={12} sm={4} spacing={2}>
+                            <Grid item>
+                                <div style={{ height: "40vh", display: "flex", flexDirection: "column",justifyContent: "center", alignItems: "center"}}>
+                                <h1 style={{ color: "white", fontFamily: "'Quicksand', sans-serif", fontWeight: "bold" }}>Wireframes</h1>
+                                <br/>
+                                {/* <h3 style={{ color: "white", fontFamily: "'Quicksand', sans-serif" }}>Hand-Drawn</h3>
+                                <h3 style={{ color: "white", fontFamily: "'Quicksand', sans-serif"}}>Figma</h3> */}
+                                </div>
+                            </Grid>
+                        </Grid>
+                        <Grid item container direction="column" xs={12} sm={8} spacing={4}>
+                            <Grid item>
+                                <div style={{ height: "40vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", fontFamily: 'Quicksand'}}>                                
+                                    <img src="wireframe-upload-file.png"></img>
+                                </div>
+                            </Grid>
+                            <Grid item>
+                                <div style={{ height: "40vh", display: "flex", justifyContent: "left", alignItems: "left" }}>
+                                    <img src="wireframe-results.png"></img>
+                                </div>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </div>
+
+
+
+
+
+
             {/* <div className="parent2"> 
                 <div className="left2">
                     <div className="left-sub2">
