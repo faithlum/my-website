@@ -137,7 +137,7 @@ function DeepBreathe() {
                             <Grid item>
                                 <div style={{ height: "40vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", fontFamily: 'Quicksand'}}>                                
                                     <ol style={{ listStyleType: "none", padding: 0 }}>
-                                        <li style={{ color: "white", fontFamily: "'Quicksand', sans-serif", fontSize: "23px"}}>
+                                        <li style={{ color: "white", fontFamily: "'Quicksand', sans-serif", fontSize: "1.2vw"}}>
                                             <p>Internal tool for clinicans to test machine learning models with different parameters and visualize results</p>
                                             <br />
                                             Goals: 
@@ -158,7 +158,7 @@ function DeepBreathe() {
                             </Grid>
                             <Grid item>
                                 <div style={{ height: "40vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                    <ul style={{ listStyleType: "disc", marginLeft: "2em", color: "white", fontFamily: "'Quicksand', sans-serif", fontSize: "23px"}}>
+                                    <ul style={{ listStyleType: "disc", marginLeft: "2em", color: "white", fontFamily: "'Quicksand', sans-serif", fontSize: "1.2vw"}}>
                                         <li>
                                             Surveyed clinical members about what features they envisioned
                                         </li>
@@ -196,12 +196,12 @@ function DeepBreathe() {
                         </Grid>
                         <Grid item container direction="column" xs={12} sm={8} spacing={2}>
                             <Grid item>
-                                <div style={{ height: "40vh", display: "flex", backgroundColor: "green", flexDirection: "column", justifyContent: "center", alignItems: "center", fontFamily: 'Quicksand'}}>                                
+                                <div style={{ height: "40vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", fontFamily: 'Quicksand'}}>                                
                                     <img src="wireframe-upload-file.png" style={{ maxWidth: "100%", maxHeight: "100%" }}></img>
                                 </div>
                             </Grid>
                             <Grid item>
-                                <div style={{ height: "40vh", backgroundColor: "green", display: "flex", justifyContent: "left", alignItems: "left" }}>
+                                <div style={{ height: "40vh", display: "flex", justifyContent: "left", alignItems: "left" }}>
                                     <img src="wireframe-results.png" style={{ maxWidth: "100%", maxHeight: "100%" }}></img>
                                 </div>
                             </Grid>
