@@ -77,7 +77,7 @@ function DeepBreathe() {
                         </div>
                         <div>
                             <Accordion expanded={state.isExpanded2} onChange={toggleExpansion2} sx={{ backgroundColor: "transparent", boxShadow: "none" }} >
-                                <AccordionSummary expandIcon={<ExpandMore/>} sx={{ marginTop: "20px" }}>
+                                <AccordionSummary expandIcon={<ExpandMore sx={{ color: '#F6A000' }}/>} sx={{ marginTop: "20px" }}>
                                     <Typography variant="h6" color="#F6A000" fontFamily="'Quicksand', sans-serif" fontSize="40px" fontWeight='500'>Learning</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{ paddingTop: "0px" }}>
@@ -90,7 +90,7 @@ function DeepBreathe() {
                         </div>
                         <div>
                             <Accordion expanded={state.isExpanded3} onChange={toggleExpansion3} sx={{ backgroundColor: "transparent", boxShadow: "none" }} >
-                                <AccordionSummary expandIcon={<ExpandMore/>} sx={{ marginTop: "20px" }}>
+                                <AccordionSummary expandIcon={<ExpandMore sx={{ color: '#F6A000' }}/>} sx={{ marginTop: "20px" }}>
                                     <Typography variant="h6" color="#F6A000" fontFamily="'Quicksand', sans-serif" fontSize="40px" fontWeight='500'>Takeaways</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails sx={{ paddingTop: "0px" }}>
@@ -113,16 +113,16 @@ function DeepBreathe() {
             </div>
 
             <div className="parent2">
-            <Grid container spacing={2} justify="center" style={{borderWidth: '10vh', borderColor: 'blue', borderStyle: 'solid' }}>
+            <Grid container spacing={2} justify="center" style={{borderWidth: '10vh', borderStyle: 'solid', borderColor: 'transparent' }}>
                 <Grid container spacing={2} justify="center">
                     {/* Column 1 */}
                     <Grid item container direction="column" xs={12} sm={4} spacing={2}>
                         <Grid item>
-                            <Paper style={{ height: "40vh", background: "orange", display: "flex", flexDirection: "column",justifyContent: "center", alignItems: "center"}}>
-                               <h1>Problem Definition</h1>
-                               <h3>What is the app's purpose?</h3>
-                               <h3>Who are our users?</h3>
-                            </Paper>
+                            <div style={{ height: "40vh", display: "flex", flexDirection: "column",justifyContent: "center", alignItems: "center"}}>
+                               <h1 style={{ color: "white", fontFamily: "'Quicksand', sans-serif", fontWeight: "bold" }}>Problem Definition</h1>
+                               <h3 style={{ color: "white", fontFamily: "'Quicksand', sans-serif" }}>What is the app's purpose?</h3>
+                               <h3 style={{ color: "white", fontFamily: "'Quicksand', sans-serif"}}>Who are our users?</h3>
+                            </div>
                         </Grid>
                         <Grid item>
                             <Paper style={{ height: "40vh", background: "green", display: "flex", justifyContent: "center", alignItems: "center" }}>TEST2</Paper>
@@ -130,19 +130,21 @@ function DeepBreathe() {
                     </Grid>
                     <Grid item container direction="column" xs={12} sm={8} spacing={2}>
                         <Grid item style={{ marginLeft: "auto" }}>
-                            <div style={{ height: "40vh", width: "60vh", background: "orange", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", fontFamily: 'Quicksand'}}>                                
-                                <ol>
-                                    <li>
-                                        Internal tool for clinicans to test machine learning models with different parameters so they can provide nuanced feedback on results and analyze complex cases
-                                        <ul style={{ listStyleType: "disc", marginLeft: "1em" }}>
+                            <div style={{ height: "40vh", width: "60vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", fontFamily: 'Quicksand'}}>                                
+                                <ol style={{ listStyleType: "none", padding: 0 }}>
+                                    <li style={{ color: "white", fontFamily: "'Quicksand', sans-serif", fontSize: "23px"}}>
+                                        <p>Internal tool for clinicans to test machine learning models with different parameters and visualize results</p>
+                                        <br />
+                                        Goals: 
+                                        <ul style={{ listStyleType: "disc", marginLeft: "2em" }}>
                                             <li>
-                                                Improve their understanding of how the model performs in different situations
+                                                Improve user understanding of how the model performs
                                             </li>
                                             <li>
-                                                Efficiently test samples with a standard workflow
+                                                Run samples with a standard workflow
                                             </li>
                                             <li>
-                                                Visualize results
+                                                Present prediction data intuitively
                                             </li>
                                         </ul>
                                     </li>
