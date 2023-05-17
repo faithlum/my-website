@@ -164,12 +164,33 @@
     animation-delay: 2s; 
 }
 
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* .home-img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  } */
+  
+  .responsive-img {
+    object-fit: contain;
+  }
+
 .home-img img {
     max-width: 550px;
     margin-right: 30;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s; 
+    background: #0FE4F6;
+    width: auto;
+    height: auto;
 }
 
 /* KEYFRAMES ANIMATION */

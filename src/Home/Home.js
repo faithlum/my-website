@@ -15,7 +15,7 @@ function Home() {
                         {/* <a href="#" className="btn">Documentation</a> */}
                      </div>
                     <div className="home-img">
-                        <img src="/website_profile1.jpg" alt=""/>
+                        <img src="/website_profile1.jpg" alt="" className="responsive-img"/>
                     </div>
                 </section>
             </div>
