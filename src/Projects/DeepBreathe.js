@@ -14,7 +14,7 @@ function DeepBreathe() {
         videoURL: "https://www.youtube.com/watch?v=O9XtK6R1QAk",
         isExpanded1: true,
         isExpanded2: false,
-        isExpanded3: true,
+        isExpanded3: false,
         isExpanded4: true,
     })
 
@@ -194,15 +194,15 @@ function DeepBreathe() {
                                 </div>
                             </Grid>
                         </Grid>
-                        <Grid item container direction="column" xs={12} sm={8} spacing={4}>
+                        <Grid item container direction="column" xs={12} sm={8} spacing={2}>
                             <Grid item>
-                                <div style={{ height: "40vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", fontFamily: 'Quicksand'}}>                                
-                                    <img src="wireframe-upload-file.png"></img>
+                                <div style={{ height: "40vh", display: "flex", backgroundColor: "green", flexDirection: "column", justifyContent: "center", alignItems: "center", fontFamily: 'Quicksand'}}>                                
+                                    <img src="wireframe-upload-file.png" style={{ maxWidth: "100%", maxHeight: "100%" }}></img>
                                 </div>
                             </Grid>
                             <Grid item>
-                                <div style={{ height: "40vh", display: "flex", justifyContent: "left", alignItems: "left" }}>
-                                    <img src="wireframe-results.png"></img>
+                                <div style={{ height: "40vh", backgroundColor: "green", display: "flex", justifyContent: "left", alignItems: "left" }}>
+                                    <img src="wireframe-results.png" style={{ maxWidth: "100%", maxHeight: "100%" }}></img>
                                 </div>
                             </Grid>
                         </Grid>
